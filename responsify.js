@@ -1,7 +1,7 @@
 (function ($) {
 	var currentSize = undefined,
-		width = '',
-		height = '';
+		width = 0,
+		height = 0;
 
 	responsify = function () {
 		return {
@@ -34,19 +34,20 @@
 		function updateSize() {
 			var viewport = v(), theSize;
 
-			if (viewport.width >= 1200)
+			width = viewport.width;
+			height = viewport.height;
+
+			if (width >= 1200)
 				theSize = 'lg';
-			else if (viewport.width >= 992)
+			else if (width >= 992)
 				theSize = 'md';
-			else if (viewport.width >= 768)
+			else if (width >= 768)
 				theSize = 'sm';
 			else
 				theSize = 'xs';
 
 			if (theSize !== currentSize) {
 				currentSize = theSize;
-				width = viewport.width;
-				height = viewport.height;
 
 				$(document).trigger('responsify', [theSize]);
 			}
