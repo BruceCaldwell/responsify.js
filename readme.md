@@ -1,7 +1,7 @@
 responsify.js
 =============
 
-A super simple jQuery plugin to add responsive functionality to your site using Bootstrap standards. Does not require Bootstrap, but is meant to be used with it.
+A super simple jQuery plugin to add a responsive jQuery Event to your site using Bootstrap standards. Does not require Bootstrap, but is meant to be used with it.
 
 The width used by responsify.js is the closest I've found to exactly matching the CSS viewport width. If a better way is found, it will be updated.
 
