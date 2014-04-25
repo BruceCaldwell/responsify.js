@@ -35,11 +35,11 @@ This is only a wrapper for the jQuery.on function. It can be used on any element
 
 **Example:**
 
-``
+```
 $(document).responsify(function(e, size) {
 	/* Your code here */
 });
-``
+```
 
 ---
 
@@ -47,24 +47,24 @@ $(document).responsify(function(e, size) {
 
 You can also access the current width, height, and Bootstrap-style size from calling on the global `responsify` function.
 
-``
+```
 if(responsify().currentSize === 'md') {
 	/* Your code here */
 }
-``
+```
 
 **OR**
 
-``
+```
 if(responsify().width >= 1200) {
 	/* Your code here */
 }
-``
+```
 
 **OR**
 
-``
+```
 if(responsify().height >= 750) {
 	/* Your code here */
 }
-``
+```
